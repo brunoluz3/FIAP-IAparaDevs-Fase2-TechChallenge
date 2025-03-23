@@ -13,6 +13,7 @@ Esse projeto contém 7 arquivos, porém, alguns foram utilizados como PoC (prova
 - **BaseSquads/person.json**: Arquivos onde podemos consultar/inserir os dados das squads atuais, essa informação será utilizada em 2 momentos, no primeiro para montar a primeira população, ou seja, a partir desse individuo geraremos as mutações e cruzamentos para gerar novas squads e após isso, com base no resultado gerado, vamos utilizar essa base novamente para consultar se temos pessoas nos times que poderiam migrar para uma nova squad que visa alta performance.
 - **melhorTime.py**: Nesse arquivos temos os métodos baseados em algoritmos genéticos que são responsáveis por calcular o fitness dos individuos, fazer o cruzamento genético, aplicar o fator de mutação e gerar os novos individuos
 - **SugestaoMelhorTime.py**: Nesse arquivos temos a aplicação dos arquivos anterior, utilizando o pygame como interface para visualização dos resultados, além disso, é possivel acompanhar a quantidade de gerações que foram realizadas até o momento que alcançamos o resultado ideal
+- **requirements.txt**: Documento que descreve todas as libs e verões usadas no projeto
 
 ## Como usar
 
