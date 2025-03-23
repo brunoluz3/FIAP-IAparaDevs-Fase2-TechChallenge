@@ -24,6 +24,7 @@ Case:
 import random
 import numpy as np
 import pandas as pd
+import os
 
 # Definicao do time target
 target_team = (10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10)
@@ -32,7 +33,7 @@ target_team = (10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10)
 population_size = 11
 num_generations = 100
 
-mutation_intensity = 0.001  # % da intesidade de mutacao
+mutation_intensity = 0.005  # % da intesidade de mutacao
 mutation_rate = 0.01 # probabilidade de mutacao
 
 json_team_path = "BaseSquads/person.json" #caminho do json com as avaliacoes do time
@@ -129,9 +130,13 @@ def define_team(best_team, data, title):
                 control = False
                 break      
     
-    if len(team) == 0:
-        nobody = ["Nobody found", "0", title]
-        team.append(nobody)
+    # if len(team) == 0:
+    #     nobody = ["Nobody found", "0", title]
+    #     team.append(nobody)
+
+    while len(team) < len (best_team):
+        hire = ["Hire a new " + title, "", title]
+        team.append(hire)
     
     return list(team)
 
