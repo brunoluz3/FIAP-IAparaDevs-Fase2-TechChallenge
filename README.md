@@ -19,8 +19,8 @@ Esse projeto contém 7 arquivos, porém, alguns foram utilizados como PoC (prova
 Para executar o projeto: 
 - Atualize o arquivo JSON com os dados das suas squads
 - Ajuste as variavies:
-    target_team: Quatidade de pessoas e resultados esperados para cada um dos membros do time
-    population_size: Tamanho da população que será utilizado durante todo o processo de criação de novos individuos
+    - target_team: Quatidade de pessoas e resultados esperados para cada um dos membros do time
+    - population_size: Tamanho da população que será utilizado durante todo o processo de criação de novos individuos
 
 
 
