@@ -7,6 +7,22 @@ Esse repositório contém um projeto em python que utiliza algoritmos genéticos
 ## Resumo
 Esse projeto tem como objetivo montar um time ágil de alta performance, utilizando como base, a busca por um individuo (squad) onde todos os seus genes (membros) seráo classificados como nota 10. Para avaliação inicial, criamos a primeira população com base nas squads atuais e em resultados reais das últimas avaliação de cada componente dos times, a partir disso, utilizamos o cruzamento genético e a mutação para buscarmos novas combinações genéticas que permitam gerarmos um novo individuo.
 
+- Case:
+    - Codificamos um modelo de algortmo genetico que tem como objetivo montar a melhor formacao de uma squad para um projeto de alta complexidade, estamos considerando o seguinte cenário:
+
+    - Squad formada por:
+        - 3 devs backend;
+        - 2 devs ios;
+        - 2 devs android;
+        - 2 qas;
+        - 1 tech lead;
+        - 1 project lead
+
+    - Populacao inicial: foi formada considerando 3 squads existentes, como valor de comparação, estamos utilizando as ultimas avaliacoes de cada um dos membros dos times;
+    Target: como se trata de um projeto complexo, estamos buscando pessoas que foram avaliadas com nota maxima (10) para todos os perfis
+
+    - Após a montagem da nova populacao, estamos fazendo uma busca na base atual do mem
+
 ## Arquivos
 Esse projeto contém 7 arquivos, porém, alguns foram utilizados como PoC (prova de conceito), para uso da aplicação são necessário:
 
@@ -21,6 +37,7 @@ Esse projeto contém 7 arquivos, porém, alguns foram utilizados como PoC (prova
 ## Como usar
 
 Para executar o projeto: 
+- Abrir o projeto a partir da pasta "AlgoritmoGenetico"
 - Atualize o arquivo JSON com os dados das suas squads
 - Ajuste as variavies:
     - target_team: Quatidade de pessoas e resultados esperados para cada um dos membros do time

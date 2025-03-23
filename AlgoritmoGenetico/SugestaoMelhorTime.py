@@ -1,5 +1,28 @@
+"""
+Autores: Bruno Luz e Diogo Leal
+Conteúdo do trabalho de encerramento da segunda fase do curso de IA para Devs
+Esse codigo tem como objetivos a aplicacao pratica de algoritmos geneticos
+
+Case:
+    Codificamos um modelo de algortmo genetico que tem como objetivo montar a melhor formacao de uma squad para um projeto de alta complexidade, estamos considerando o seguinte cenário:
+
+    Squad formada por:
+        3 devs backend;
+        2 devs ios;
+        2 devs android;
+        2 qas;
+        1 tech lead;
+        1 project lead
+
+    Populacao inicial: foi formada considerando 3 squads existentes, como valor de comparação, estamos utilizando as ultimas avaliacoes de cada um dos membros dos times;
+    Target: como se trata de um projeto complexo, estamos buscando pessoas que foram avaliadas com nota maxima (10) para todos os perfis
+
+    Após a montagem da nova populacao, estamos fazendo uma busca na base atual do membros das squads para entender quais pessoas atendem o resultado apresentado pelo algoritmo
+
+"""
+
 import pygame
-import matplotlib
+#import matplotlib
 import pylab
 import matplotlib.backends.backend_agg as agg
 from melhorTime import *
